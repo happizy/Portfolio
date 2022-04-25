@@ -103,7 +103,7 @@
         </div>
         <div class="about-info">
           <h3 class="sub-heading">A propos de moi</h3>
-          <h1 class="heading">18 ans,<br> objectif ingénieur</h1>
+          <h1 class="heading">19 ans,<br> objectif ingénieur</h1>
           <p class="text">Je suis étudiant en BUT Informatique à l'IUT de Lannion et aspire à me former aux métiers de l'ingénierie en effectuant un apprentissage en alternance avec une école d'ingénieurs. Je suis un étudiant passionné, curieux et toujours motivé à acquérir de nouvelles compétences en étant mis à l'épreuve.</p>
           <div class="cta">
             <a href="mailto:pro.martinrouxel@gmail.com" class="btn">Contactez moi</a>
@@ -375,9 +375,16 @@
 
     </div>
   </footer>
-
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
   <!-- JavaScript Files -->
-
+  <script>
+    let loader_wrapper = document.querySelector(".loader-wrapper");
+    window.addEventListener("load", function(){
+      loader_wrapper.parentElement.removeChild(loader_wrapper);
+    });
+  </script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/mixitup.min.js"></script>
   <script src="./js/app.js"></script>
