@@ -2,9 +2,11 @@
 
 Site portfolio responsive
 
-télécharger le fichier zip et ouvrir "index.html" sur navigateur pour tester le site.
+## maintenant hébergé à : <a href="martin-rouxel.com">martin-rouxel.com</a>
 
-(prochainement hébergé)
+---
+
+## (formulaire de contact non fonctionnel)
 
 ## Captures du site :
 
