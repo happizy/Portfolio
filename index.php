@@ -339,13 +339,27 @@
           <a href="mailto:pro.martinrouxel@gmail.com" class="mail">pro.martinrouxel@gmail.com <i class="uil uil-arrow-right"></i></a>
         </div>
 
-        <form method="post" class="contact-form">
+        <form method="post" action="" class="contact-form">
           <h3>Envoyez moi un message</h3>
           <input type="text" name="nom" placeholder="Votre nom" class="form-input" required>
           <input type="email" name="email" placeholder="Votre email" class="form-input" required>
           <textarea placeholder="Votre message" class="form-input" name="message" required></textarea>
           <input type="submit" value="Envoyer" class="btn">
         </form>
+        <?php
+        if (isset($_POST['message'])) {
+          $entete  = 'MIME-Version: 1.0' . "\r\n";
+          $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+          $entete .= 'From: contact@martin-rouxel.com' . "\r\n";
+          $entete .= 'Reply-to: ' . $_POST['email'];
+
+          $message = '<h1>Message envoyé depuis le formulaire de contact</h1>
+          <p><b>Email : </b>' . $_POST['email'] . '<br>
+          <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+
+          $retour = mail('pro.martinrouxel@gmail.com', $_POST['nom'], nl2br($message), $entete);
+        }
+        ?>
       </div>
       
     </section>

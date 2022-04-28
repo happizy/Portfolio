@@ -6,7 +6,7 @@ Site portfolio responsive
 
 ---
 
-## (formulaire de contact non fonctionnel)
+## (formulaire de contact désormais fonctionnel !)
 
 ## Captures du site :
 
