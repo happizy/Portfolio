@@ -2,6 +2,8 @@
 
 Site portfolio responsive
 
+## V1.1 : site plus responsive sur mobile
+
 ## maintenant hébergé à : <a href="martin-rouxel.com">martin-rouxel.com</a>
 
 ---

@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
   <!-- --------- CSS Files --------- -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-autoprefix.css">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 
   <main>
     <!-- --------- Showcase Area Section --------- -->
-    <section class="showcase-area" id="accueil">
+    <section class="showcase-area section" id="accueil">
       <img src="./assets/square1.png" alt="" class="shape square">
       <div class="container">
         <div class="showcase-info">
@@ -373,8 +373,8 @@
       <p class="text">&copy; Copyright 2022. Tous droits réservés. <br><a target="_blank" href="./assets/mentions_legales.pdf" class="text linkfooter">mentions légales</a></p>
       <ul class="social-media">
         <li>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100014228911532" class="social-link">
-            <i class="uil uil-facebook-f"></i>
+          <a target="_blank" href="https://github.com/happizy" class="social-link">
+            <i class="uil uil-github"></i>
           </a>
         </li>
         <li>
