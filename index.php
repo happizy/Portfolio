@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="showcase-image">
-          <img src="./assets/Martino1-min.png" class="person" alt="markus">
+          <img src="./assets/Martino2_2_1.png" class="person" alt="markus">
           <img src="./assets/circle1.png" alt="" class="shape circle">
           <img src="./assets/dots.png" alt="" class="shape dots">
         </div>
@@ -169,7 +169,7 @@
                   <circle cx="75" cy="75" r="68"/>
                 </svg>
                 <h2 class="counter">
-                  <span data-target="54">0</span>%
+                  <span data-target="64">0</span>%
                 </h2>
               </div>
               <div class="sk-title">Gestion de projet</div>

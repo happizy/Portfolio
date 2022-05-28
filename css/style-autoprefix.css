@@ -11,6 +11,15 @@
   --main-color-2: hsl(var(--hue-2),75%, 48%);
   --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
   --section-padding: 7rem 2rem;
+  --gradient: linear-gradient(
+    124deg,
+    #6650f2,
+    #5b6ed9,
+    #4e8bbf,
+    #3ca692,
+    #30bf7c
+
+  );
 }
 
 body {
@@ -31,6 +40,28 @@ body.dark {
   --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
   --heading-color: hsl(var(--hue-1), 100%, 95%);
   --text-color: hsl(var(--hue-1), 14%, 51%);
+}
+
+::-webkit-scrollbar{
+  width: 0.85rem;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--bg-color-transparent);
+  backdrop-filter: blur(15px);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 100vw;
+  
+  background: var(--bg-color-2);
+  border: 0.15rem solid var(--text-color);
+  
+  transition: border-color 1.5s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border-color: var(--main-color-2);
 }
 
 body.dark .shape.square{
@@ -473,7 +504,7 @@ body.open .hamburger .bar:last-child{
   margin-left: 25px;
   width: 100%;
   min-height: calc(100% + 120px);
-  background-image: linear-gradient(124deg, var(--main-color-1) ,var(--main-color-2));
+  background-image: linear-gradient(124deg, var(--main-color-2) ,var(--main-color-1));
   margin-top: -120px;
   border-radius: 0 0 80px 80px;
 }
@@ -1471,8 +1502,13 @@ footer .text{
       border-bottom:1px solid var(--main-color-2);
   }
   
-  .skills .btn{
-      margin-left:43px;
+  .skills .box-desc{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+      
   }
   
   .portfolio{
